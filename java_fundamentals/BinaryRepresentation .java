@@ -11,10 +11,10 @@ public class BinaryRepresentation {
         if (number < 1 || number > 255) {
             System.out.println("Please enter a number between 1 and 255.");
         } else {
-            // Convert to binary string
+          
             String binaryString = Integer.toBinaryString(number);
 
-            // Pad with leading zeros to make 8 digits
+           
             binaryString = String.format("%8s", binaryString).replace(' ', '0');
 
             System.out.println("Binary representation: " + binaryString);
@@ -23,3 +23,4 @@ public class BinaryRepresentation {
         scanner.close();
     }
 }
+
